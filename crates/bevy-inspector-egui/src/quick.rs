@@ -82,7 +82,7 @@ impl Plugin for WorldInspectorPlugin {
             app.add_plugins(DefaultInspectorConfigPlugin);
         }
         if !app.is_plugin_added::<EguiPlugin>() {
-            app.add_plugins(EguiPlugin);
+            app.add_plugins(EguiPlugin {enable_multipass_for_primary_context: false});
         }
         if !app.is_plugin_added::<InspectSchedulePlugin>() {
             app.add_plugins(InspectSchedulePlugin);
@@ -183,7 +183,7 @@ impl<T: Resource + Reflect> Plugin for ResourceInspectorPlugin<T> {
             app.add_plugins(DefaultInspectorConfigPlugin);
         }
         if !app.is_plugin_added::<EguiPlugin>() {
-            app.add_plugins(EguiPlugin);
+            app.add_plugins(EguiPlugin {enable_multipass_for_primary_context: false});
         }
         if !app.is_plugin_added::<InspectSchedulePlugin>() {
             app.add_plugins(InspectSchedulePlugin);
@@ -282,7 +282,7 @@ impl<T: FreelyMutableState + Reflect> Plugin for StateInspectorPlugin<T> {
             app.add_plugins(DefaultInspectorConfigPlugin);
         }
         if !app.is_plugin_added::<EguiPlugin>() {
-            app.add_plugins(EguiPlugin);
+            app.add_plugins(EguiPlugin {enable_multipass_for_primary_context: false});
         }
         if !app.is_plugin_added::<InspectSchedulePlugin>() {
             app.add_plugins(InspectSchedulePlugin);
@@ -369,7 +369,7 @@ impl<A: Asset + Reflect> Plugin for AssetInspectorPlugin<A> {
             app.add_plugins(DefaultInspectorConfigPlugin);
         }
         if !app.is_plugin_added::<EguiPlugin>() {
-            app.add_plugins(EguiPlugin);
+            app.add_plugins(EguiPlugin {enable_multipass_for_primary_context: false});
         }
         if !app.is_plugin_added::<InspectSchedulePlugin>() {
             app.add_plugins(InspectSchedulePlugin);
@@ -454,7 +454,7 @@ where
             app.add_plugins(DefaultInspectorConfigPlugin);
         }
         if !app.is_plugin_added::<EguiPlugin>() {
-            app.add_plugins(EguiPlugin);
+            app.add_plugins(EguiPlugin {enable_multipass_for_primary_context: false});
         }
         if !app.is_plugin_added::<InspectSchedulePlugin>() {
             app.add_plugins(InspectSchedulePlugin);

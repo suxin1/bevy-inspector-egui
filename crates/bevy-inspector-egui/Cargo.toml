@@ -60,7 +60,7 @@ bevy_image = { version = "0.16.0-rc", optional = true }
 
 egui = "0.31"
 
-bevy_egui = { git = "https://github.com/slyedoc/bevy_egui", branch = "bevy_0.16" }
+bevy_egui = "0.34.0-rc"
 #bevy_egui = { version = "0.33", default-features = false }
 
 bytemuck = "1.16.0"
